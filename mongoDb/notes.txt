@@ -1,0 +1,32 @@
+Docker compose contendo o banco Mongo Db e o Mongoexpress(Ide para visualização de dados)
+
+executar o compose
+=> docker-compose up -d
+
+verificar as redes criadas
+=> docker network ls
+
+verificação dos containers criados
+=> docker-compose ps -a
+
+Serviço do Mongo na porta : 27017
+MongoExpress na porta: 8081
+
+Para o acesso usa-se as variáveis de ambiente 
+
+Serviço Mongo:
+MONGO_INITDB_ROOT_USERNAME e MONGO_INITDB_ROOT_PASSWORD
+
+MongoExpress:
+ME_CONFIG_BASICAUTH_USERNAME e ME_CONFIG_BASICAUTH_PASSWORD
+
+VOLUMES:
+Criar uma pasta chamada Docker na Raiz do C:
+
+=> /Docker/Volumes/MongoDB
+############################################################################
+Acesso MongoExpress : http://localhost:8081
+
+
+
+

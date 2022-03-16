@@ -1,0 +1,18 @@
+executar o compose
+=> docker-compose up -d
+
+verificar as redes criadas
+=> docker network ls
+
+verificação dos containers criados
+=> docker-compose ps -a
+
+**Efetuar a alteração do caminho do volume no docker compose
+
+Porta do Redis: 6379 
+
+ConnectionString : "ConexaoRedis": "localhost,port: 6379,password=RedisTeste!",
+
+para acesso usar a ferramenta FastoRedis 
+
+https://fastoredis.com/

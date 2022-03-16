@@ -1,0 +1,30 @@
+Docker-compose contendo sqlserver + volume
+
+executar o compose
+=> docker-compose up -d
+
+verificar as redes criadas
+=> docker network ls
+
+verificação dos containers criados
+=> docker-compose ps
+
+User do Banco :sa
+Senha do banco: Password_01
+Server:localhost:1433
+
+ConnectionString: 
+
+** Caso gere erro de SSL Provider executar os comandos:
+
+dotnet dev-certs https --clean
+dotnet dev-certs https --trust
+
+Add os parâmentros Trusted_Connection e TrustServerCertificate na ConnectionString
+Server=localhost,1433;Database=seu_banco;User ID=sa;Password=Password_01;Trusted_Connection=False; TrustServerCertificate=True;
+
+
+
+
+
+

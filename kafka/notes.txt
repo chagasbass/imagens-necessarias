@@ -1,0 +1,18 @@
+Docker-compose contém o kafka, Zookeper e KafkaDrop(Ide para visualização de mensagens e criação de topicos)
+
+executar o compose
+=> docker-compose up -d
+
+verificar as redes criadas
+=> docker network ls
+
+verificação dos containers criados
+=> docker-compose ps -a
+
+
+
+BootstrapServer do Kafka : localhost:9002
+Kafkadrop Web : http://localhost:19000
+
+
+
